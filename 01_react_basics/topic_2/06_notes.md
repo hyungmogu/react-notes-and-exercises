@@ -1,7 +1,6 @@
 # Lesson 06 - Create the Player
 
-- this part is an extension of lesson 5
-- can be safely skipped
+- component other than `<Header/>` can be placed in ReactDOM.create() to render element in view
 
 ```
 const Player = () => {
