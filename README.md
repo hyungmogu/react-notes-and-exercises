@@ -1,1 +1,1 @@
-# React Notes and Exercisesx
+# React Notes and Exercises
