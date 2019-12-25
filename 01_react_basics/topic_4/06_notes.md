@@ -14,6 +14,7 @@
             }
         }
 
+        // here, this returns undefined
         incrementScore() {
             this.setState({
                 score: this.state.score += 1
@@ -41,7 +42,7 @@
             }
         }
 
-        // see arrow function here
+        // see the arrow function here
         incrementScore = () => {
             this.setState({
                 score: this.state.score += 1
