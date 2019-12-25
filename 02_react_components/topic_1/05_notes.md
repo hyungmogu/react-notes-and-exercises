@@ -12,7 +12,6 @@
 
 - With named import class prefixes (i.e. React) can be omitted
 
-
     Before
     <div style="text-align: center;">
         <img src="https://user-images.githubusercontent.com/6856382/71448817-446c9b00-26f6-11ea-9048-e9dc070f3814.png">
