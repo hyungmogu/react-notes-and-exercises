@@ -39,7 +39,7 @@
                 <div className="scoreBoard">
                     <Header
                         title="scoreboard"
-                        totalPlayers={props.initialPlayers.length}
+                        players={this.state.players}
                     />
 
                     {/*Players List*/}
@@ -64,7 +64,7 @@
     }
     ```
 
-    Player.js
+    Headers.js
     ```
         const Player = (props) => {
             return (
