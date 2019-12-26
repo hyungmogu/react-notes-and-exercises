@@ -4,6 +4,7 @@
 
 ## Communicating Between Components
 - Components can be communicated using **callback function**
+    - callback function is created in highest level component, and passed down
 
 <div style="text-align: center;">
     <img src="https://user-images.githubusercontent.com/6856382/71459166-06559280-275b-11ea-840e-dd020eb8c6ba.png">
@@ -53,7 +54,7 @@
                             name={player.name}
                             score={player.score} // note that score is passed down
                             removePlayer={this.handleRemovePlayer}
-                            changeScore = {this.handleSchangeOrd}
+                            changeScore = {this.handleScoreChange}
                             // this adds method 'removePlayer' to component
                             id={player.id}
                             // this passes player id to player component
@@ -78,7 +79,7 @@
                     </span>
 
                     // note that score is passed down from Player to counter
-                    <Counter score={props.score}/>
+                    <Counter score={props.score} changeScore={pros.changesc}/>
                 </div>
             );
         }
@@ -89,9 +90,9 @@
         const Counter = (props) => {
             return (
                 <div className="counter">
-                    <button className="counter-action decrement">-</button>
+                    <button className="counter-action decrement" onClick={() => this.props.changeScore(-1)}>-</button>
                     <span className="counter-score">{ props.score }</span>
-                    <button className="counter-action increment">+</button>
+                    <button className="counter-action increment" onClick={() => this.props.chanegScore(1)}>+</button>
                 </div>
             );
         }
