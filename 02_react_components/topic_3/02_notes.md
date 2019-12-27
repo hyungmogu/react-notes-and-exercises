@@ -1,4 +1,4 @@
-# Lesson 01 - Stopwatch State
+# Lesson 02 - Stopwatch State
 
 
 <div style="text-align: center;">
@@ -6,6 +6,7 @@
 </div>
 
 - this lecture goes over initializing Stopwatch component
+    - `?` and `:` in `{this.state.isRunning ? 'Start' : 'End'}` means if this.state.isRunning is true, then return 'Start' else return 'End'
 
     Stopwatch.js
     ```
