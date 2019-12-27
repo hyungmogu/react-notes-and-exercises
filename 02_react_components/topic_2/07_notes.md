@@ -53,7 +53,7 @@
         playerId = this.state.players.length;
 
         handleAddPlayer = (name) => {
-            this.setState({
+            this.setState( prevState => {
                 players: [
                     ...this.state.players, // this adds existing players without modifying the array
                     {
