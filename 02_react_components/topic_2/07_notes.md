@@ -32,6 +32,8 @@
     }
     ```
 
+    2. Second is to add value brought from child component to its state
+
     App.js
     ```
     ...
