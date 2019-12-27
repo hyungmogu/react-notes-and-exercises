@@ -6,7 +6,7 @@
 </div>
 
 - this lecture goes over initializing Stopwatch component
-    - `?` and `:` in `{this.state.isRunning ? 'Start' : 'End'}` means if this.state.isRunning is true, then return 'Start' else return 'End'
+    - `?` and `:` in `{this.state.isRunning ? 'Start' : 'End'}` is called **ternary operator** and it means if this.state.isRunning is true, then return 'Start' else return 'End'
 
     Stopwatch.js
     ```
