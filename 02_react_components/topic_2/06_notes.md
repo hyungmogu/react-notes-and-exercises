@@ -118,6 +118,7 @@
 - To change predefined value in input, we need to
     1. create changes in the input to detect when value is updated
 
+    AddPlayerForm.js
     ```
     import React, {Component} from 'react';
 
@@ -148,6 +149,7 @@
 
     2. create an event handler that updates the value state
 
+    AddPlayerForm.js
     ```
     import React, {Component} from 'react';
 
