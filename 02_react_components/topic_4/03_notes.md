@@ -82,4 +82,4 @@
 
     export default AddPlayerForm;
     ```
-    - this simplifies a lot
+    - this simplifies a lot of code
