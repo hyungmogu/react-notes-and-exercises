@@ -12,29 +12,30 @@ class Player extends PureComponent {
     id: PropTypes.number.isRequired,
     index: PropTypes.number.isRequired
   };
-
   render() {
-    
-    const { 
+
+    const {
       name,
       id,
       score,
       index,
       removePlayer,
-      changeScore
+      changeScore,
+      highestScore
     } = this.props;
 
     return (
       <div className="player">
         <span className="player-name">
           <button className="remove-player" onClick={() => removePlayer(id)}>✖</button>
+          <span className={() => this.handleHighestScore}></span>
           { name }
         </span>
-  
-        <Counter 
+
+        <Counter
           score={score}
           index={index}
-          changeScore={changeScore} 
+          changeScore={changeScore}
         />
       </div>
     );
