@@ -34,7 +34,6 @@ class Player extends PureComponent {
             score={score}
           />
           { name }
-          {isHighestScore ? 'hello' : 'world'}
         </span>
 
         <Counter
