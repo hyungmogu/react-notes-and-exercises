@@ -31,7 +31,6 @@ class App extends Component {
 
   // player id counter
   prevPlayerId = 4;
-  maxScore = 0;
 
   handleScoreChange = (index, delta) => {
     this.setState( prevState => {
@@ -44,6 +43,10 @@ class App extends Component {
       updatedPlayer.score += delta;
       // Update the 'players' array with the target player's latest score
       updatedPlayers[index] = updatedPlayer;
+
+      // Update highest score
+      let scores = this.state.players.map(x => x.score);
+      this.maxScore = Math.max(scores);
 
       // Update the `players` state without mutating the original state
       return {
@@ -75,19 +78,14 @@ class App extends Component {
     });
   }
 
-  componentDidUpdate() {
-    // determine the maximum score
-
-    this.setState( prevState => {
-      return {
-        isHighest: prevState.score >= this.maxScore
-      }
-    });
+  getMaxScore() {
+    let scores = this.state.players.map(x => x.score);
+    return Math.max(...scores);
   }
 
-
-
   render() {
+    let maxScore = this.getMaxScore();
+
     return (
       <div className="scoreboard">
         <Header players={this.state.players} />
@@ -101,7 +99,7 @@ class App extends Component {
             key={player.id.toString()}
             index={index}
             changeScore={this.handleScoreChange}
-            highestScore={this.handleHighestScore}
+            isHighestScore={player.score === maxScore}
             removePlayer={this.handleRemovePlayer}
           />
         )}
