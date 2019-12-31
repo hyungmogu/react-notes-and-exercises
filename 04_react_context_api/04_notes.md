@@ -1,5 +1,9 @@
 # Lesson 03 - Provide and Consume State
 
+- Consumer allows the access of data in Provider without **prop drilling**
+- Consumer is a part of context
+
+## Consumer
 
 - to consume provided data, first import Consumer in a component wrapped in Provider
 - with the following, `props`, `<COMPONENT>.propTypes`, `<COMPONENT>.defaultProps` can be removed
