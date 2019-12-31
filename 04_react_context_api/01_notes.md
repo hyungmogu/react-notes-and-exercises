@@ -3,10 +3,18 @@
 ## Prop Drilling
 - is a condition that occurs when passing a data from a component to its child several layers deep
 
-    i.e
+    ```
+    <Main prop1={prop}>
+        <Parent prop2={prop1}>
+            <Child prop3={prop2}>
+                <GrandChild1 />
+                <GrandChild2 />
+                <GrandChild3 />
+            </Child>
+        </Parent>
+    </Main>
+    ```
 
-    - React
-    - Redux
 
 ## React Context API
 - is developed by Facebook, and released starting React version 16
