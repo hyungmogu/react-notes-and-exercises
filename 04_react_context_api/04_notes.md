@@ -1,4 +1,4 @@
-# Lesson 03 - Provide and Consume State
+# Lesson 04 - Provide and Consume State
 
 - Consumer allows the access of data in Provider without **prop drilling**
 - Consumer is a part of context
