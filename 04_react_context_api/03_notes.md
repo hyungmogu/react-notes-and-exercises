@@ -34,7 +34,7 @@
         let maxScore = this.getMaxScore();
 
         return (
-        <Provider> // Wrap all in <Provider>!!
+        <Provider value={this.state.players}> // Wrap all in <Provider>!!
             <div className="scoreboard">
                 <Header players={this.state.players} />
 
