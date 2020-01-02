@@ -1,6 +1,21 @@
 # Lesson 06 - Using the Match Object
 
 - match object containing parent URL and path is passed as prop to components via `<Route/>`
+    - Note: course component must be passed in `component` or pass `match` to render for `match.url` and `match.props` to be used in component
+
+    App.js
+    ```
+    <BrowserRouter>
+        <div className="container">
+            <Header/>
+            <Route exact path="/" render={ () => <Home/>}/>
+            <Route path="/about" render={({match}) => <About title='About' match={match}/>}/>
+            <Route path="/teachers" render={() => <Teachers title='Teachers'/>}/>
+            <Route path="/courses" component={Courses}/>
+        </div>
+    </BrowserRouter>
+    ```
+
     - `match.url` is used in `<Link>` or `<NavLink>`
     - `match.prop` is used in `<Route>`
 
