@@ -7,7 +7,6 @@
         - `activeStyle` for addition of styles
         - `activeClassName` for addition of class name
 
-
     ```
     import React from 'react';
     import {
