@@ -1,7 +1,8 @@
 import React from 'react';
 import {
-  Link,
-  Route
+  NavLink,
+  Route,
+  Redirect
 } from 'react-router-dom';
 
 import HTML from './courses/HTML';
@@ -13,13 +14,14 @@ const Courses = () => (
     <div className="course-header group">
       <h2>Courses</h2>
       <ul className="course-nav">
-        <li><Link to='/courses/html'>HTML</Link></li>
-        <li><Link to='/courses/css'>CSS</Link></li>
-        <li><Link to='/courses/javascript'>JavaScript</Link></li>
+        <li><NavLink to='/courses/html'>HTML</NavLink></li>
+        <li><NavLink to='/courses/css'>CSS</NavLink></li>
+        <li><NavLink to='/courses/javascript'>JavaScript</NavLink></li>
       </ul>
     </div>
 
     {/* Write routes here... */}
+    <Route exact path="/courses" render={ () => <Redirect to="/courses/html"/>}/>
     <Route path="/courses/html" render={ () => <HTML/>}/>
     <Route path="/courses/css" render={() => <CSS/>}/>
     <Route path="/courses/javascript" render={() => <JavaScript/>}/>
