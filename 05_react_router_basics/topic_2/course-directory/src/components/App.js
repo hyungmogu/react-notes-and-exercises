@@ -18,7 +18,7 @@ const App = () => (
           <Route exact path="/" render={ () => <Home/>}/>
           <Route path="/about" render={() => <About title='About'/>}/>
           <Route path="/teachers" render={() => <Teachers title='Teachers'/>}/>
-          <Route path="/courses" render={() => <Courses title='Courses'/>}/>
+          <Route path="/courses" component={Courses}/>
       </div>
   </BrowserRouter>
 );
