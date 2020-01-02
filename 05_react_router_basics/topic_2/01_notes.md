@@ -1,5 +1,7 @@
 # Lesson 01 - Navigating Between Routes
 
+**Note: react project can be run by typing `npm start` in `course-directory`**
+
 - `<Link>` component in React router is equivalent to `<a>` tag
 - `<Link>` uses **to** as opposed to **href** to load components set at different urls
 

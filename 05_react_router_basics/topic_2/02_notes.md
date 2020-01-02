@@ -1,5 +1,7 @@
 # Lesson 02 - Styling Active Links
 
+**Note: react project can be run by typing `npm start` in `course-directory`**
+
 - `<NavLink>` is a special version of `<Link>` that will add styling attributes
     - allows the addition of css classes and styles to component
         - `activeStyle` for addition of styles
