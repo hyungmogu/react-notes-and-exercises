@@ -27,4 +27,27 @@
 
     **Answer:** A
 
-4.
+4. Which <Route> prop accepts an inline function that gets called when the URL and path match?
+
+    - A) [ ]: path
+    - B) [ ]: exact
+    - C) [ ]: render
+
+5. React Router uses JSX syntax to declare routes.
+
+    - A) [ ]: True. React Router is a set of components, and the declarative syntax of JSX makes it easier to visualize how routes are structured.
+    - B) [ ]: False. React Router requires you to write routes using pure JavaScript.
+
+    **Answer:** A
+
+6. Which `<Route>` prop renders a component only when the path matches the URL exactly?
+
+    - A) exact
+    - B) component
+    - C) render/code>
+    - D) path
+
+    **Answer:** A
+
+
+
