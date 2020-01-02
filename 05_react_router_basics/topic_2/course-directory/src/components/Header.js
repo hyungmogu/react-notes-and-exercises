@@ -1,16 +1,16 @@
 import React from 'react';
 import {
-  Link
+  NavLink
 } from 'react-router-dom';
 
 const Header = () => (
   <header>
     <span className="icn-logo"><i className="material-icons">code</i></span>
     <ul className="main-nav">
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/about">About</Link></li>
-      <li><Link to="/teachers">Teachers</Link></li>
-      <li><Link to="/courses">Courses</Link></li>
+      <li><NavLink exact to="/" activeStyle={{'background-color': 'red'}}>Home</NavLink></li>
+      <li><NavLink to="/about" activeClassName="actyMcActiveFace">About</NavLink></li>
+      <li><NavLink to="/teachers">Teachers</NavLink></li>
+      <li><NavLink to="/courses">Courses</NavLink></li>
     </ul>
   </header>
 );
