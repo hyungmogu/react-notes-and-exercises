@@ -7,14 +7,18 @@ import {
 
 import Home from './Home';
 import About from './About';
+import Teachers from './Teachers';
+import Courses from './Courses';
 import Header from './Header';
 
 const App = () => (
   <BrowserRouter>
       <div className="container">
           <Header/>
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/about" component={About}/>
+          <Route exact path="/" render={ () => <Home/>}/>
+          <Route path="/about" render={() => <About title='About'/>}/>
+          <Route path="/teachers" render={() => <Teachers title='Teachers'/>}/>
+          <Route path="/courses" render={() => <Courses title='Courses'/>}/>
       </div>
   </BrowserRouter>
 );
