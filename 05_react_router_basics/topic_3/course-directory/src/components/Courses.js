@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 
 import CourseContainer from './courses/CourseContainer';
-import {HTMLCourses, CSSCourses, JSCourses} from './data/courses';
+import {HTMLCourses, CSSCourses, JSCourses} from '../data/courses';
 
 const Courses = ({match}) => {
   return(

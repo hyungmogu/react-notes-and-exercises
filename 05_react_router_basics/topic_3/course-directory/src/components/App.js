@@ -12,6 +12,7 @@ import Teachers from './Teachers';
 import Courses from './Courses';
 import Header from './Header';
 import NotFound from './NotFound';
+import Featured from './Featured';
 
 const App = () => (
   <BrowserRouter>
@@ -20,7 +21,8 @@ const App = () => (
           <Switch>
             <Route exact path="/" render={ () => <Home/>}/>
             <Route path="/about" render={() => <About title='About'/>}/>
-            <Route path="/teachers" render={() => <Teachers title='Teachers'/>}/>
+            <Route exact path="/teachers" render={() => <Teachers title='Teachers'/>}/>
+            <Route path="/teachers/:name/:topic" component={Featured}/>
             <Route path="/courses" component={Courses}/>
             <Route component={NotFound}/>
           </Switch>
