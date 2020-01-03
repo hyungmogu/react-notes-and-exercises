@@ -2,7 +2,7 @@
 
 ## List of components
 - React now allows a component to return list of components
-    - this saves a lot of space
+    - this eliminates the need to wrap components in a container
 
     components/JSTeachers.js;
     ```
