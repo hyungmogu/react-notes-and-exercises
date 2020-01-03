@@ -1,13 +1,14 @@
 # Lesson 02 - Take Control of Errors with componentDidCatch()
 
 
-- before app crashed entirely if error occured.
+- before update, app crashed entirely if error occured.
 
     <div style="text-align: center;">
         <img src="https://user-images.githubusercontent.com/6856382/71741444-2ac90300-2e1c-11ea-85ec-99d2d19bc7e8.png">
     </div>
 
 - facebook has developed and released `componentDidCatch()` feature that allows app to continue to run despite of errors
+    - its very similar to `try` and `catch` statement
 
     Example
     ```
