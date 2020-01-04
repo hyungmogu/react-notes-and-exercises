@@ -28,7 +28,7 @@
     }}
     ```
 
-    - second, run `np install --save gh-pages`
+    - second, run `npm install --save gh-pages`
         - this lets to save on branch `gh-pages`
         - [UPDATE, 2019] this is not necessary. Master branch can also be used by configuring in `setting` under repo
 
@@ -53,7 +53,7 @@
 
     ```
 
-## Github page and 404 not found
+## Github Page and 404 Not Found
 - caused by url not starting at root
 - can be circumvented by adding basename to `BrowserRouter`
 
