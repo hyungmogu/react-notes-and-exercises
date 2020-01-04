@@ -1,11 +1,9 @@
-# Lesson 01 - Fetching Data with the Fetch API
+# Lesson 02 - Fetching Data with Axios
 
-- `fetch` and `then` is used to fetch data from `GET` endpoint
-    - works like `promise` in javascript
-        - `fetch` is used to make a request to endpoint
-        - `then` is used to synthesize data if retrieval successful
-        - `catch` is used when error results (i.e status code 404, or 500)
-    - is asynchronous
+- Axios is a promise based library that's similar to `fetch` API
+    - works similar to `fetch` API
+    - has stronger browser support
+    - consists of more elaborate functionalities
 
     Example
 
@@ -26,10 +24,9 @@
     }
 
     componentDidMount() {
-        fetch('http://api.giphy.com/v1/gifs/trending?api_key=...')
-            .then(response => response.json())
-            .then(responseData => {
-                this.setState({ gifs: responseData.data });
+        axios.get('http://api.giphy.com/v1/gifs/trending?api_key=...') // fetch is replaced with axios.get
+            .then(response => {
+                this.setState({ gifs: response.data.data });
             })
             .catch(error => {
                 console.log('Error fetching and parsing data', error);
@@ -52,4 +49,6 @@
         </div>
         );
     }}
+
+    export default App;
     ```
