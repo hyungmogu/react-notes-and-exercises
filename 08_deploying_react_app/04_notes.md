@@ -23,7 +23,7 @@
         ❯ Hyungmo Gu's team
         ```
 
-    - sixth, add `site name` and `account`
+    - seventh, add `site name` and `account`
 
         Example
 
@@ -33,5 +33,5 @@
         ? Site name (optional): course-directory-5321
         ```
 
-    - seventh, set path of folder containing production files from project root folder (i.e. build)
-    - eighth, run `netlify deploy --prod`
+    - eighth, set path of folder containing production files from project root folder (i.e. build)
+    - nineth, run `netlify deploy --prod`

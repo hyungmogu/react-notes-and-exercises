@@ -26,7 +26,7 @@
         }
         ```
 
-    - second, add the following lines of code to `package.json`
+    - third, add the following lines of code to `package.json`
 
         package.json
         ```
@@ -36,5 +36,5 @@
         }
         ```
 
-    - third, execute command `npm run now-build`
-    - fourth, deploy by executing command `now`
+    - fourth, execute command `npm run now-build`
+    - fifth, deploy by executing command `now`
