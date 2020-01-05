@@ -4,7 +4,8 @@
 - create react native app by typing `create-react-native-app <APP_NAME>`
 - installation provides the following options
     1. `npm start`
-        - creates development server so it can be viewed on physical app, or ios or android emulator
+        - creates development server so it can be viewed on physical device by scanning QR code
+        - also has option to view on ios or android emulator
 
         **Note:** this requires the installation of **Expo** application on android/ios device
 
