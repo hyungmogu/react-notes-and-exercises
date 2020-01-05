@@ -5,4 +5,4 @@
 - One build tool
 - No lock-in
     - users are not forced to use provided configuration settings
-    - can create custom configuration by `ejecting` the native app
+    - can implement custom configuration by `ejecting` the native app
