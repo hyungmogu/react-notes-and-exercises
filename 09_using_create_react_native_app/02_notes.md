@@ -1,5 +1,4 @@
-# Lesson 01 - Installing Create React Native App
-
+# Lesson 02 - Installing Create React Native App
 
 - install by typing `npm install -g create-react-native-app`
 - create react native app by typing `create-react-native-app <APP_NAME>`
